@@ -5,11 +5,25 @@ from matplotlib.colors import ListedColormap
 import os
 
 def prepare_data(df):
+    """it is used to generate the dependent and indenpendent vaariables
+
+    Args:
+        df (pd.DataFrame): it is a pandas dataframe
+
+    Returns:
+        tuple: returns both dependent and independent variables
+    """
     X = df.drop("y", axis =1)
     y = df["y"]
     return X,y
 
 def save_model(model, filename):
+    """it is used to save the created model
+
+    Args:
+        model (python object): pass the created model
+        filename (str): path to dave the model
+    """
     model_dir = "models"
     os.makedirs(model_dir, exist_ok =True) # only creates if model dir not exists
     filepath = os.path.join(model_dir, filename)
