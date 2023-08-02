@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-from tqdm import tqdm
 
 class Perceptron:
     def __init__(self, eta, epochs):  # self makes variable to access globally within the class
