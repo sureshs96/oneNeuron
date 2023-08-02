@@ -22,4 +22,4 @@ if __name__ == '__main__':
     }
     ETA = 0.03
     EPOCHS = 10
-    main(data=AND, modelname="and.model", plotname="and.png", eta = ETA, epochs=EPOCHS)
+    main(data=AND, modelname="and.model", plotfilename="and.png", eta = ETA, epochs=EPOCHS)
